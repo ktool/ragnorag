@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-ink-950: #070b14;
+  --color-ink-900: #0b1220;
+  --color-ink-850: #0f1729;
+  --color-ink-800: #131d33;
+  --color-ink-700: #1c2842;
+  --color-ink-600: #2a3756;
+  --color-accent: #8b7cf6;
+  --color-accent-strong: #7c6cf0;
+  --color-teal: #2dd4bf;
+}
+
+html, body, #root { height: 100%; }
+body { @apply bg-ink-950 text-slate-200 font-sans antialiased; }
+::selection { background: rgb(139 124 246 / 0.35); }
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: #2a3756; border-radius: 8px; }
+.prose-answer p { margin: 0.5rem 0; line-height: 1.65; }
+.prose-answer ul { list-style: disc; padding-left: 1.25rem; margin: 0.5rem 0; }
+.prose-answer ol { list-style: decimal; padding-left: 1.25rem; margin: 0.5rem 0; }
+.prose-answer li { margin: 0.25rem 0; line-height: 1.6; }
+.prose-answer h1, .prose-answer h2, .prose-answer h3, .prose-answer h4 { font-weight: 600; color: #e2e8f0; margin: 0.9rem 0 0.35rem; }
+.prose-answer strong { color: #f1f5f9; }
